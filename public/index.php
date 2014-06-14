@@ -12,7 +12,12 @@ and open the template in the editor.
     <body>
         <?php
         // put your code here
-        echo 'hey';
+        require_once '../includes/database.php';
+        
+        $db;
+        
+        
+        
         ?>
     </body>
 </html>
