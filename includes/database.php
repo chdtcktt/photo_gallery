@@ -64,6 +64,3 @@ class MySQLDatabase {
     }
 
 }
-
-$db = new MySQLDatabase();
-

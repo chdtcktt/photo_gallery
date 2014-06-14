@@ -11,13 +11,10 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
         require_once '../includes/database.php';
         
-        $db;
-        
-        
-        
+        $db = new MySQLDatabase();
+
         ?>
     </body>
 </html>
