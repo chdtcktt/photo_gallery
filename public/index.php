@@ -11,9 +11,11 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        require_once '../includes/database.php';
+        require_once '../includes/user.php';
+  
         
-        $db = new MySQLDatabase();
+        
+       
 
         ?>
     </body>
