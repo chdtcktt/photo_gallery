@@ -35,7 +35,7 @@ class MySQLDatabase {
     //query db
     public function query($sql) {
         $this->last_query = $sql;
-        $result = mysqli_query($sql, $this->con);
+        $result = mysqli_query($this->con,$sql);
         $this->confirm_query($result);
         return $result;
     }
@@ -59,7 +59,7 @@ class MySQLDatabase {
     }
 
     public function fetch_array($result_set) {
-        return mysql_fetch_array($result_set);
+        return mysqli_fetch_array($result_set);
     }
 
     public function num_rows($result_set) {
@@ -84,5 +84,3 @@ class MySQLDatabase {
     }
 
 }
-
-
